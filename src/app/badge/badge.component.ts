@@ -7,8 +7,7 @@ import { Component, OnInit } from '@angular/core';
       badge works!
     </p>
   `,
-  styles: [
-  ]
+  styles: ['']
 })
 export class BadgeComponent implements OnInit {
 

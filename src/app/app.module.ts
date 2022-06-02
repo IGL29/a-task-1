@@ -1,26 +1,25 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { CardModule } from './card/card.module';
+import { IconTooltipModule } from './icon-tooltip/icon-tooltip.module';
+import { ButtonModule } from './button/button.module';
+import { RatingModule } from './rating/rating.module';
 import { AppComponent } from './app.component';
-import { ButtonComponent } from './button/button.component';
-import { RatingComponent } from './rating/rating.component';
-import { IconComponent } from './icon/icon.component';
-import { BadgeComponent } from './badge/badge.component';
-import { TooltipComponent } from './tooltip/tooltip.component';
-import { CardComponent } from './card/card.component';
+import { DropdownModule } from './dropdown/dropdown.module';
+import { DescriptionWrapperModule } from './description-wrapper/desription-wrapper.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ButtonComponent,
-    RatingComponent,
-    IconComponent,
-    BadgeComponent,
-    TooltipComponent,
-    CardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CardModule,
+    ButtonModule,
+    RatingModule,
+    IconTooltipModule,
+    DropdownModule,
+    DescriptionWrapperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
